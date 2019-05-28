@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"local-dev": "cd incubator-openwhisk-devtools/docker-compose/ && make quick-start",
+		"show-props": "cat incubator-openwhisk-devtools/docker-compose/.wskprops",
+		"local-deploy": "wskdeploy -m src/manifest.yml --strict"
   },
   "author": "",
   "license": "ISC"
