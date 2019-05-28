@@ -6,6 +6,8 @@ wskdeploy
 
 node
 
+wsk
+
 ## setup
 
 ```
@@ -26,7 +28,9 @@ npm run local-deploy
 
 ## known issues
 
-you need to setup additional key in config - don't ask me why ...
+1. include `-i` flag each time you run `wsk` commands against local env
+
+2. you need to setup additional key in config - don't ask me why ...
 
 ```
 APIGW_ACCESS_TOKEN=foo
