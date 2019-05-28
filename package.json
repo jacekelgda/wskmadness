@@ -8,7 +8,8 @@
 		"local-dev": "cd incubator-openwhisk-devtools/docker-compose/ && make quick-start",
 		"show-props": "cat incubator-openwhisk-devtools/docker-compose/.wskprops",
 		"local-deploy": "wskdeploy -m src/manifest.yml --strict",
-		"manual-endpoint": "wsk api create /hello get /guest/hello_world_package/hello_world -i"
+		"manual-endpoint": "wsk api create /hello get /guest/hello_world_package/hello_world -i",
+		"list-api": "wsk api list -i"
   },
   "author": "",
   "license": "ISC"
