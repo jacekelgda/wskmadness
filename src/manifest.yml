@@ -9,6 +9,7 @@ packages:
         function: hello.js
         runtime: nodejs:8
         web-export: true
+        web: true
     apis:
       hello-world:
         hello:
