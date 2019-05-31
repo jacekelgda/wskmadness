@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"local-dev": "cd incubator-openwhisk-devtools/docker-compose/ && make quick-start",
-		"show-props": "cat incubator-openwhisk-devtools/docker-compose/.wskprops",
-		"local-deploy": "wskdeploy -m src/manifest.yml --strict",
-		"local-undeploy": "wskdeploy undeploy -m src/manifest.yml --strict",
-		"manual-endpoint": "wsk api create /hello get /guest/hello_world_package/hello_world -i",
-		"list-api": "wsk api list -i"
+		"start": "cd incubator-openwhisk-devtools/docker-compose/ && make quick-start",
+		"stop": "cd incubator-openwhisk-devtools/docker-compose/ && make destroy",
+		"props": "cat incubator-openwhisk-devtools/docker-compose/.wskprops",
+		"deploy": "wskdeploy -m src/manifest.yml --strict",
+		"undeploy": "wskdeploy undeploy -m src/manifest.yml --strict"
   },
   "author": "",
   "license": "ISC"
